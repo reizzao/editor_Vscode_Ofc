@@ -23,6 +23,20 @@
 			"}"
 		],
 		"description": "for"
+	},
+	"toString_status_Console": {
+		"prefix": "toString_status_Console",
+		"body": [
+			"@Override",
+			"public String toString() {",
+			"  return this.getClass().getName() + \": {\" + \"\\n\" +",
+			"  \"  key: \" + this.atribute + \", \\n\" +",
+			"  \"  key: \" + this.atribute + \", \\n\" +",
+			"  \"  key: \" + this.atribute + \", \\n\" +",
+			"  \"}\";",
+			"}"
+		],
+		"description": "toString_status_Console"
 	}
 
 	// Place your snippets for java here. Each snippet is defined under a snippet name and has a prefix, body and

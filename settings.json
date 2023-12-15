@@ -19,6 +19,7 @@
     "statusBar.debuggingForeground": "#FFFFFF"
   },
   "editor.lineHeight": 24,
+  "editor.wordWrapColumn": 120, // tamanho maximo das colunas
   "editor.tabSize": 2, // TAB IDENTACAO PADRAO.
   "update.mode": "none", // atualizar vscode : "none" nao pede mais >> "default" < fica avisando.
   "zenMode.silentNotifications": false,
@@ -85,6 +86,7 @@
     "editor.formatOnSave": true
   },
   // Code runner
+  "code-runner.showExecutionMessage": false,
   "code-runner.clearPreviousOutput": true,
   "code-runner.ignoreSelection": true,
   "code-runner.saveFileBeforeRun": true,
@@ -97,7 +99,9 @@
     "code-runner.clearPreviousOutput": false,
     "typescript": "clear && deno run",
     // "typescript": "clear && npx ts-node --files --transpile-only -r tsconfig-paths/register",
-    ".js": "clear && node"
+    ".js": "clear && node",
+    "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "kotlin": "cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar"
   },
   "code-runner.executorMapByGlob": {
     "$dir/*.go": "go"
@@ -172,6 +176,8 @@
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
-  "java.debug.settings.console": "internalConsole"
+  "java.debug.settings.console": "internalConsole",
+  "boot-java.rewrite.reconcile": true,
+  "git.openRepositoryInParentFolders": "always"
 
 }

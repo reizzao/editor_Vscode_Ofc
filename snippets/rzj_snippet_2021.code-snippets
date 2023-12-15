@@ -1,5 +1,91 @@
 {
   // global
+  "mark_nota": {
+    "prefix": "mark_nota",
+    "body": [
+      ">[!NOTE]",
+      ">",
+      ">textos da nota."
+    ],
+    "description": "mark_nota"
+  },
+  "nova_music": {
+    "prefix": "nova_music",
+    "body": [
+      "# Musica : $1",
+      "• #compositor(s) : ReinaldoREIZAO",
+      "",
+      "---",
+      "",
+      "",
+      "---",
+      "",
+      "Sinopse_Musical :",
+      "@Categorias : [  ]",
+      "• Data :  /  /",
+      "",
+      "---",
+      "Harmonia :",
+      "tom:",
+      "Bpm :",
+      "parte: \"A\", notas: [ ], compassos( ),  repete(), detalhe: \"\",",
+      "parte: \"B\", notas: [ ],, compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"transicao\", notas: [ ],, compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"REFRAO\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"final\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "",
+      "---"
+    ],
+    "description": "nova_music"
+  },
+
+  "music_contato": {
+    "prefix": "music_contato",
+    "body": [
+      "CONTATOS",
+      "*instagram : @ReizaoMusic   *twitter: @ReizaoMusic",
+      "site: www.sites.google.com/view/reinaldoreizao10",
+      "---",
+      "",
+      "------------------------------------",
+      ""
+    ],
+    "description": "music_contato"
+  },
+  "sinopse_music": {
+    "prefix": "sinopse_music",
+    "body": [
+      "-------------------------------------",
+      "",
+      "Sinopse_Musical :",
+      "@Categorias : [ Dolente ]",
+      "",
+      "* Harmonia :",
+      "tom:",
+      "Bpm :",
+      "parte: \"INTRO\", notas: [  ], compassos( ),  repete(), detalhe: \"\",",
+      "parte: \"A\", notas: [  ], compassos( ),  repete(), detalhe: \"\",",
+      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"B\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"REFRAO\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "parte: \"C\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
+      "",
+      "------------------------------------",
+    ],
+    "description": "sinopse_music"
+  },
+
+  "path_add_binario_new_package": {
+    "prefix": "path_add_binario_new_package",
+    "body": [
+      "# BIN_PATH - adicionar bin do novo pacote ao PATH caminho do sistema.",
+      "export PATH=$PATH:/home/rzj/_git_rzj/_programas_/ENDERECO_ATÉ_O_/bin/"
+    ],
+    "description": "path_add_binario_new_package"
+  },
+
   "tabela_markdown": {
     "prefix": "tabela_markdown",
     "body": [
