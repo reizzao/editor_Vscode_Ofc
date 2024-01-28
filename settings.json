@@ -101,7 +101,7 @@
     // "typescript": "clear && npx ts-node --files --transpile-only -r tsconfig-paths/register",
     ".js": "clear && node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "kotlin": "cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d $fileNameWithoutExt.jar && java -jar $fileNameWithoutExt.jar"
+    "kotlin": "cd $workspaceRoot || $dir && kotlinc $fileName -include-runtime -d dist/debugs/$fileNameWithoutExt.jar && java -jar dist/debugs/$fileNameWithoutExt.jar"
   },
   "code-runner.executorMapByGlob": {
     "$dir/*.go": "go"
