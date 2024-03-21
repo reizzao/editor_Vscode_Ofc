@@ -1,5 +1,27 @@
 {
   // global
+  "jsDoc": {
+    "prefix": "jsDoc",
+    "body": [
+      "/**",
+      " * @desc metodo $1",
+      " * @input { foo } add ...'",
+      " * @example ...'",
+      " */"
+    ],
+    "description": "jsDoc"
+  },
+  "tryCatch": {
+    "prefix": "tryCatch",
+    "body": [
+      "try {",
+      "  $1",
+      "} catch (e) {",
+      "  throw e",
+      "}"
+    ],
+    "description": "tryCatch"
+  },
   "mark_nota": {
     "prefix": "mark_nota",
     "body": [

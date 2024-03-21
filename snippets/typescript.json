@@ -1,5 +1,74 @@
 {
-
+  "deno_test_import_Assert": {
+    "prefix": "deno_test_import_Assert",
+    "body": [
+      "import {",
+      "  assert, assertThrows, assertEquals, assertExists,",
+      "  assertInstanceOf,",
+      "  assertStringIncludes, assertArrayIncludes",
+      "$1",
+      "} from \"https://deno.land/std@0.219.0/assert/mod.ts\";"
+    ],
+    "description": "deno_test_import_Assert"
+  },
+  "deno_test_Suite_AssertThrows": {
+    "prefix": "deno_test_Suite_AssertThrows",
+    "body": [
+      "Deno.test(\"Deve lançar erro [$1] na () => .\", () => {",
+      "  assertThrows(",
+      "    () => { funcaoAlvo(10) }, Error, \"Ops\",",
+      "  )",
+      "})"
+    ],
+    "description": "deno_test_Suite_AssertThrows"
+  },
+  "test_deno_SUITE": {
+    "prefix": "test_deno_SUITE",
+    "body": [
+      "Deno.test({",
+      "  name: \"[ FAIL ] deve retornar $1 .\",",
+      "  only: false,",
+      "  async fn() {",
+      "",
+      "",
+      "    expect(true)",
+      "  },",
+      "",
+      "});"
+    ],
+    "description": "test_deno_SUITE"
+  },
+  "test_deno": {
+    "prefix": "test_deno",
+    "body": [
+      "import { expect } from \"https://deno.land/x/expect@v0.2.10/expect.ts\";",
+      "",
+      "const sut = true",
+      "",
+      "Deno.test({",
+      "  name: \"[ FAIL ] deve retornar $1.\",",
+      "  only: false,",
+      "  async fn() {",
+      "",
+      "  expect(true).toEqual(true);",
+      "  },",
+      "",
+      "});",
+      "",
+      "Deno.test(\"[ OK ] deve retornar .\", () => {",
+      "",
+      "  expect(true).toEqual(true);",
+      "});",
+      "",
+      "/* -- TESTER_CONSOLE -- */",
+      "",
+      "async function tester_ () {}",
+      "// tester_ ();",
+      "",
+      "export default 1;"
+    ],
+    "description": "test_deno"
+  },
   "conceito_Completo": {
     "prefix": "conceito_Completo",
     "body": [
@@ -40,38 +109,6 @@
       "}"
     ],
     "description": "model_class_custom_error_ts"
-  },
-
-  "test_deno": {
-    "prefix": "test_deno",
-    "body": [
-      "import { expect } from \"https://deno.land/x/expect@v0.2.10/expect.ts\";",
-      "",
-      "const sut = true",
-      "",
-      "Deno.test({",
-      "  name: \"[ FAIL ] deve retornar $1.\",",
-      "  only: false,",
-      "  async fn() {",
-      "",
-      "  expect(true).toEqual(true);",
-      "  },",
-      "",
-      "});",
-      "",
-      "Deno.test(\"[ OK ] deve retornar .\", () => {",
-      "",
-      "  expect(true).toEqual(true);",
-      "});",
-      "",
-      "/* -- TESTER_CONSOLE -- */",
-      "",
-      "async function tester_ () {}",
-      "// tester_ ();",
-      "",
-      "export default 1;"
-    ],
-    "description": "test_deno"
   },
 
   "noExport_DEFAULT_1": {

@@ -1,5 +1,11 @@
 [
   {
+    "key": "ctrl+shift+f5",
+    "command": "workbench.action.reloadWindow",
+    "when": "editorTextFocus",
+    "desc": "reload restartar vscode"
+  },
+  {
     "key": "shift+f2",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor",
