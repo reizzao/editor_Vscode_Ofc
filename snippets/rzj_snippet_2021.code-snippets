@@ -1,16 +1,6 @@
 {
   // global
-  "jsDoc": {
-    "prefix": "jsDoc",
-    "body": [
-      "/**",
-      " * @desc metodo $1",
-      " * @input { foo } add ...'",
-      " * @example ...'",
-      " */"
-    ],
-    "description": "jsDoc"
-  },
+
   "tryCatch": {
     "prefix": "tryCatch",
     "body": [
@@ -143,9 +133,19 @@
     ],
     "description": "html5_template"
   },
+  "rest_http_GET": {
+    "prefix": "rest_http_GET",
+    "body": [
+      "###",
+      "GET {{ host }}/ HTTP/1.1",
+      "",
+      "###"
+    ],
+    "description": "rest_http_GET"
+  },
 
-  "http_api_rest_template": {
-    "prefix": "http_api_rest_template",
+  "rest_http_POST": {
+    "prefix": "rest_http_POST",
     "body": [
       "### ",
       " ",
@@ -158,10 +158,10 @@
       "",
       "### "
     ],
-    "description": "http_api_rest_template"
+    "description": "rest_http_POST"
   },
 
-  "config_rest_extensao_vscode": {
+  "config_rest_http_settings_VSCODE": {
     "prefix": "config_rest_extensao_vscode",
     "body": [
       "{",
@@ -173,7 +173,7 @@
       "  }",
       "}"
     ],
-    "description": "config_rest_extensao_vscode"
+    "description": "config_rest_http_settings_VSCODE"
   },
 
   "divid": {

@@ -1,4 +1,22 @@
 {
+	"test_Junit_JAVA": {
+		"prefix": "test_Junit_JAVA",
+		"body": [
+			"package com.empresa.projetoum;",
+			"",
+			"import org.junit.jupiter.api.Test;",
+			"import org.springframework.boot.test.context.SpringBootTest;",
+			"",
+			"@SpringBootTest",
+			"class ProjetoumApplicationTests {",
+			"",
+			"@Test",
+			"  void ${1:nomeFuncao}() {}",
+			"",
+			"}"
+		],
+		"description": "test_Junit_JAVA"
+	},
 	"loop_ForEach": {
 		"prefix": "loop_ForEach",
 		"body": [

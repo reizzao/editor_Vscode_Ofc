@@ -1,4 +1,15 @@
 {
+  "jsDoc": {
+    "prefix": "jsDoc",
+    "body": [
+      "/**",
+      " * @desc metodo $1",
+      " * @input { foo } add ...'",
+      " * @example ...'",
+      " */"
+    ],
+    "description": "jsDoc"
+  },
   "deno_test_import_Assert": {
     "prefix": "deno_test_import_Assert",
     "body": [
