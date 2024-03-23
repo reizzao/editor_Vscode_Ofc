@@ -1,4 +1,35 @@
 {
+	"lombok_Classe_Aux": {
+  "prefix": "lombok_Classe_Aux",
+  "body": [
+    "import lombok.AllArgsConstructor;",
+    "import lombok.Data;",
+    "import lombok.NoArgsConstructor;",
+    "",
+    "@Data",
+    "@AllArgsConstructor",
+    "@NoArgsConstructor",
+    "$1"
+  ],
+  "description": "lombok_Classe_Aux"
+},
+"spring_web_rest_CONTROLLER_Template": {
+  "prefix": "spring_web_rest_CONTROLLER_Template",
+  "body": [
+    "import org.springframework.web.bind.annotation.RequestMapping;",
+    "import org.springframework.web.bind.annotation.RestController;",
+    "",
+    "@RestController",
+    "public class DepartamentoController {",
+    "",
+    "  @RequestMapping(value = \"/\")",
+    "  public String ${1:METODO_ROTA}() {",
+    "    return \"hello Word 12\";",
+    "  }",
+    "}"
+  ],
+  "description": "spring_web_rest_CONTROLLER_Template"
+},
 	"test_Junit_JAVA": {
 		"prefix": "test_Junit_JAVA",
 		"body": [

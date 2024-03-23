@@ -18,7 +18,7 @@
     "desc": "encontrar todas referencias de um symbol onde estiver sendo usado em  todos arquivos: comando original: shift+alt+f12"
   },
   {
-    "key": "f12",
+    "key": "ctrl+shift+f12",
     "command": "copyFilePath",
     "when": "editorFocus",
     "desc": "Copiar caminho absoluto de arquivo em foco >> original era ctrl+k ctrl+alt+c"
@@ -266,6 +266,16 @@
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active || terminalFocus",
     "desc": "toggle terminal >>> key original ctrl+shift+[BracketLeft] "
+  },
+  {
+    "key": "f12",
+    "command": "workbench.action.terminal.killAll",
+    "desc": "ao executar fora do terminal- fecha mata todos terminais abertos."
+  },
+  {
+    "key": "alt+t",
+    "command": "workbench.action.terminal.new",
+    "desc": "cria novo terminal"
   }
 
 

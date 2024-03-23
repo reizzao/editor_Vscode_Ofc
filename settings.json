@@ -40,7 +40,7 @@
 
   // POSICIONAMENTOS
   "workbench.sideBar.location": "right", // LADO DO PAINEL LATERAL SIDEBAR
-  "workbench.panel.defaultLocation": "right", // ativar menu sibebar de atividades
+  "workbench.panel.defaultLocation": "bottom", // define terminal position
 
   // -- auto_complete
   "editor.quickSuggestions": {
