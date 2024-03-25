@@ -1,4 +1,55 @@
 {
+	"test_PERSONAL_JAVA": {
+		"prefix": "test_PERSONAL_JAVA",
+		"body": [
+			"package com.empresa.projetoum;",
+			"",
+			"import static org.assertj.core.api.Assertions.assertThat;",
+			"",
+			"@TestSpringClass",
+			"class EntidadeTests {",
+			"",
+			"  Entidade sut = new Entidade();",
+			"",
+			"  @TestSpringSuite",
+			"  void deve_() {",
+			"    Entidade result = sut.execute();",
+			"",
+			"    assertThat(2).equals(2);",
+			"    // assertThat(result.nome()).isNotNull();",
+			"    // assertThat(result.nome()).hasToString(\"cli_2\");",
+			"}",
+			"",
+			"}",
+			"",
+			""
+		],
+		"description": "test_PERSONAL_JAVA"
+	},
+	"test_SPRING_JAVA_Template": {
+		"prefix": "test_SPRING_JAVA_Template",
+		"body": [
+			"import org.junit.jupiter.api.Test;",
+			"import org.springframework.boot.test.context.SpringBootTest;",
+			"",
+			"@SpringBootTest",
+			"class ProjetoumApplicationTests {",
+			"",
+			"@Test",
+			"public void should_be_${1: action_entity} () {}",
+			"",
+			"}"
+		],
+		"description": "test_SPRING_JAVA_Template"
+	},
+	"parametro_em_anotacao_personal": {
+		"prefix": "parametro_em_anotacao_personal",
+		"body": [
+			"@AliasFor(annotation = RequestMapping.class)",
+			"String value() default \"\";"
+		],
+		"description": "parametro_em_anotacao_personal"
+	},
 	"lombok_Classe_Aux": {
   "prefix": "lombok_Classe_Aux",
   "body": [
