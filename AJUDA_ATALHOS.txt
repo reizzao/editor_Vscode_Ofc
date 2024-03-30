@@ -1,4 +1,4 @@
-
+// test git - 1
 {
   "key": "",
   "command": "workbench.action.focusActivityBar"

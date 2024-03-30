@@ -1,4 +1,19 @@
 {
+	"metodo_main_JAVA": {
+		"prefix": "metodo_main_JAVA",
+		"body": [
+			"package foo;",
+			"",
+			"public class ${1: ClasseNome } {",
+			"",
+			"  public static void main(String[] args) throws Exception {",
+			"    System.out.println(\"Ola Tester 1 !\");",
+			"  }",
+			"",
+			"}"
+		],
+		"description": "metodo_main_JAVA"
+	},
 	"test_PERSONAL_JAVA": {
 		"prefix": "test_PERSONAL_JAVA",
 		"body": [
