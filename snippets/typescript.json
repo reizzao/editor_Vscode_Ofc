@@ -1,4 +1,23 @@
 {
+  "pipe_fnArgs_async_TS": {
+    "prefix": "pipe_fnArgs_async_TS",
+    "body": [
+      "/**",
+      " * @description  PIPE TS ASYNC DE FUNCOES QUE RECEBEM PARAMS DO TIPO OBJETO COM REGRAS.",
+      " * @detalhe  ARGUMENTO AS FNS PODEM RECEBER OBJ DE ARGUMENTO.",
+      "* @args (1º o dado alvo, 2º o array de funcoes, 3º é o argumento das funcoes que tem que ser um objeto que atua regrando a funcao o mesmo tipo do obj é usado aqui. )",
+      "* @returns retornará o resultado do dadoAlvo submetido por todas as funcoes do array recebido.",
+      " */",
+      "",
+      "export const pipe$1 = async (",
+      "  data: any, listFN: any[], param?: any) => {",
+      "  return await listFN.reduce((acc, fn) => {",
+      "    return fn(acc, param)",
+      "  }, data)",
+      "}"
+    ],
+    "description": "pipe_fnArgs_async_TS"
+  },
   "jsDoc": {
     "prefix": "jsDoc",
     "body": [
