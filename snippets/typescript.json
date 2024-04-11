@@ -197,5 +197,23 @@
     ],
     "description": "modelo_cleanRepoTS"
   },
+  "decorador_de_Classe": {
+    "prefix": "decorador_de_Classe",
+    "body": [
+      "function MeuDecoradorClasse(apiVersion: string, foo: string) {",
+      "",
+      "  return (constructor: any) => {",
+      "",
+      "    return class extends constructor {",
+      "      version = apiVersion",
+      "      fooProp = foo",
+      "    }",
+      "",
+      "  }",
+      "",
+      "}"
+    ],
+    "description": "decorador_de_Classe"
+  },
 
 }
