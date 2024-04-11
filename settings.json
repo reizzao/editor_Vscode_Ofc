@@ -39,7 +39,7 @@
 
   // POSICIONAMENTOS
   "workbench.sideBar.location": "right", // LADO DO PAINEL LATERAL SIDEBAR
-  "workbench.panel.defaultLocation": "bottom", // define terminal position
+  "workbench.panel.defaultLocation": "right", // define posicao do terminal
 
   // -- auto_complete
   "editor.quickSuggestions": {

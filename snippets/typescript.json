@@ -1,33 +1,31 @@
 {
-  "pipe_fnArgs_async_TS": {
-    "prefix": "pipe_fnArgs_async_TS",
+  "valor_novo_ou_default_coalescencia_nula": {
+    "prefix": "valor_novo_ou_default_coalescencia_nula",
+    "body": [
+      "\"novoValor\" ?? \"Ou_valorDefault\""
+    ],
+    "description": "valor_novo_ou_default_coalescencia_nula"
+  },
+  "pipe_fnOBJParams_async_Generic_TS": {
+    "prefix": "pipe_fnOBJParams_async_Generic_TS",
     "body": [
       "/**",
       " * @description  PIPE TS ASYNC DE FUNCOES QUE RECEBEM PARAMS DO TIPO OBJETO COM REGRAS.",
-      " * @detalhe  ARGUMENTO AS FNS PODEM RECEBER OBJ DE ARGUMENTO.",
+      " * @detalhes  PASSE O TIPO DO TARGET QUE VIRA NA REQUEST < no T GENERICO DA FN > , ARGUMENTO AS FNS PODEM RECEBER OBJ DE ARGUMENTO.",
+      " * @important  o obj de regras terá de ser do tipo TypeParamRules ex: export type { TypeParamRules as TypeParamRules } from \"/home/rzj/x/_github_rz_/SuperLibs_TS/SuperLibsTS/pipesFN/pipeAsync_FNsParamObject_Rules/lib.ts\".",
+      " * @import importe o tipo",
       "* @args (1º o dado alvo, 2º o array de funcoes, 3º é o argumento das funcoes que tem que ser um objeto que atua regrando a funcao o mesmo tipo do obj é usado aqui. )",
       "* @returns retornará o resultado do dadoAlvo submetido por todas as funcoes do array recebido.",
+      "* @exemplo await sut<TypeDotargetRequest> (requestMock, listFN, paramRule)",
       " */",
       "",
-      "export const pipe$1 = async (",
-      "  data: any, listFN: any[], param?: any) => {",
+      "export async function pipe$1Rules<T>(target: T, listFN: any[], param?: TypeParamRules) {",
       "  return await listFN.reduce((acc, fn) => {",
       "    return fn(acc, param)",
-      "  }, data)",
+      "  }, target)",
       "}"
     ],
-    "description": "pipe_fnArgs_async_TS"
-  },
-  "jsDoc": {
-    "prefix": "jsDoc",
-    "body": [
-      "/**",
-      " * @desc metodo $1",
-      " * @input { foo } add ...'",
-      " * @example ...'",
-      " */"
-    ],
-    "description": "jsDoc"
+    "description": "pipe_fnOBJParams_async_Generic_TS"
   },
   "deno_test_import_Assert": {
     "prefix": "deno_test_import_Assert",
@@ -62,6 +60,7 @@
       "",
       "",
       "    expect(true)",
+      "    Log(\"RESULTADO >> \", action)",
       "  },",
       "",
       "});"
@@ -80,20 +79,11 @@
       "  only: false,",
       "  async fn() {",
       "",
+      "    Log(\"RESULTADO >> \", action)",
       "  expect(true).toEqual(true);",
       "  },",
       "",
       "});",
-      "",
-      "Deno.test(\"[ OK ] deve retornar .\", () => {",
-      "",
-      "  expect(true).toEqual(true);",
-      "});",
-      "",
-      "/* -- TESTER_CONSOLE -- */",
-      "",
-      "async function tester_ () {}",
-      "// tester_ ();",
       "",
       "export default 1;"
     ],

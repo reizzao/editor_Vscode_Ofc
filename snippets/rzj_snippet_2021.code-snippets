@@ -1,6 +1,27 @@
 {
   // global
-
+  "jsDoc": {
+    "prefix": "jsDoc",
+    "body": [
+      "",
+      "/**",
+      " * @desc acao que $1",
+      " * @input ...",
+      " * @return uma estrutura ",
+      " * @example ...'",
+      " */",
+      ""
+    ],
+    "description": "jsDoc"
+  },
+  "testar_prototype": {
+    "prefix": "testar_prototype",
+    "body": [
+      "// Testar_Comprovar_Prototype: se comparar se são IGUAIS == o objeto1.metodoSemInvocar e o objeto2.metodo_SemInvocarsao  e retornar true, quer dizer estao apontando para o mesmo endereco de memoria entao estao no emsmo prototype",
+      "console.log(objeto1.metodo1 == objeto2.metodo1)"
+    ],
+    "description": "testar_prototype"
+  },
   "tryCatch": {
     "prefix": "tryCatch",
     "body": [
