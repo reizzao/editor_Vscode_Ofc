@@ -1,4 +1,19 @@
 {
+  "createPrototype": {
+    "prefix": "createPrototype",
+    "body": [
+      "private constructor(",
+      "    private readonly _props?: IArgs",
+      "  ) {",
+      "    Object.assign(this, _props)",
+      "  }",
+      "",
+      "  static async createPrototype(props: IArgs) {",
+      "    return new $1(props)",
+      "  }"
+    ],
+    "description": "createPrototype"
+  },
   "valor_novo_ou_default_coalescencia_nula": {
     "prefix": "valor_novo_ou_default_coalescencia_nula",
     "body": [
@@ -27,6 +42,32 @@
     ],
     "description": "pipe_fnOBJParams_async_Generic_TS"
   },
+  "assert_throw_Error_Test_DENO": {
+    "prefix": "assert_throw_Error_Test_DENO",
+    "body": [
+      "import { assertThrows } from \"https://deno.land/std@0.219.0/assert/mod.ts\";",
+      "",
+      "Deno.test({",
+      "  name: \"[ OK ] deve retornar a messagem de erro <$1.> .\",",
+      "  only: false,",
+      "  async fn() {",
+      "    function targetFN(d: string) {",
+      "      try {",
+      "        const res = new ClassMock(d)",
+      "        return res",
+      "      } catch (e) {",
+      "        throw e",
+      "      }",
+      "    }",
+      "",
+      "    assertThrows(",
+      "      () => { targetFN(\"a\") }, Error, `Ops... `, )",
+      "  },",
+      "  ",
+      "});"
+    ],
+    "description": "assert_throw_Error_Test_DENO"
+  },
   "deno_test_import_Assert": {
     "prefix": "deno_test_import_Assert",
     "body": [
@@ -38,17 +79,6 @@
       "} from \"https://deno.land/std@0.219.0/assert/mod.ts\";"
     ],
     "description": "deno_test_import_Assert"
-  },
-  "deno_test_Suite_AssertThrows": {
-    "prefix": "deno_test_Suite_AssertThrows",
-    "body": [
-      "Deno.test(\"Deve lançar erro [$1] na () => .\", () => {",
-      "  assertThrows(",
-      "    () => { funcaoAlvo(10) }, Error, \"Ops\",",
-      "  )",
-      "})"
-    ],
-    "description": "deno_test_Suite_AssertThrows"
   },
   "test_deno_SUITE": {
     "prefix": "test_deno_SUITE",
@@ -140,24 +170,6 @@
     ],
     "description": "noExport_DEFAULT_1"
   },
-  "demonstracao_reduce_async": {
-    "prefix": "demonstracao_reduce_async",
-    "body": [
-      "// await listPipeClienteFisico.reduce(async (acc: any, fn) => await fn(acc), args)",
-      "// detalhe: tipar acc: any, async na HigherOrderFunctions FuncaoDeOrdemSuperior do reduce espera para acão final."
-    ],
-    "description": "demonstracao_reduce_async"
-  },
-  "pipe_async": {
-    "prefix": "pipe_async",
-    "body": [
-      "const nameFN = async (args: any) => {",
-      "  return await arrayTarget.reduce(async (acc: any, fn) => await fn(acc), args)",
-      "}"
-    ],
-    "description": "pipe_async"
-  },
-
   "todo_futuro": {
   "prefix": "todo_futuro",
   "body": [
