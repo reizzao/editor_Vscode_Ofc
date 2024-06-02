@@ -151,6 +151,7 @@
   "boot-java.rewrite.reconcile": true,
   "git.openRepositoryInParentFolders": "always",
   "java.debug.settings.console": "internalConsole",
-  "java.debug.settings.forceBuildBeforeLaunch": false
+  "java.debug.settings.forceBuildBeforeLaunch": false,
+  "prisma.showPrismaDataPlatformNotification": false
 
 }
