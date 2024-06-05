@@ -1,20 +1,23 @@
 {
 	// snippets Golang
-	"Test_GO_suite": {
-		"prefix": "Test_GO_suite",
+	"TEST_GOLANG": {
+		"prefix": "TEST_GOLANG",
 		"body": [
+			"package _",
+			"",
 			"import (",
 			"  \"testing\"",
 			")",
 			"",
 			"func Test_ (t *testing.T) {",
-			"  instance := Funcao(Arg)",
+			"  sut_, _ := FunctionTarget(Args)",
+			"  expectedSut_ := _",
 			"",
-			"  if instance == \"foo\" {",
-			"    t.Error(\"Ops...\")",
+			"  if sut_ != expectedSut_ {",
+			"    t.Errorf(\"Ops...ERRO na Funcao __ o experado é %s\", _ )",
 			"  }",
 			"}"
 		],
-		"description": "Test_GO_suite"
+		"description": "TEST_GOLANG"
 	}
 }
