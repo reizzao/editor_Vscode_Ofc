@@ -28,8 +28,7 @@
 
   // EDITOR
   "explorer.compactFolders": true, // compacta visualiazacao dos folders na sidebar.
-  "window.newWindowDimensions": "maximized", // abre instancia maximizada ao iniciar editor
-  "editor.minimap.enabled": false,
+  "window.newWindowDimensions": "maximized",
   "editor.fontSize": 16,
   "editor.fontFamily": "'Operator Mono Lig Book', 'SF Mono', Consolas, 'Source Code Pro', 'Dank Mono', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "files.autoSave": "afterDelay",
@@ -39,7 +38,7 @@
 
   // POSICIONAMENTOS
   "workbench.sideBar.location": "right", // LADO DO PAINEL LATERAL SIDEBAR
-  "workbench.panel.defaultLocation": "right", // define posicao do terminal
+  "workbench.panel.defaultLocation": "bottom", // define posicao do terminal
 
   // -- auto_complete
   "editor.quickSuggestions": {
@@ -92,6 +91,7 @@
     "$dir/*.go": "go"
   },
   // LINGUAGENS:
+  // javascript config linguage
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno",
     "editor.formatOnSave": true
@@ -101,7 +101,7 @@
   "javascript.updateImportsOnFileMove.enabled": "prompt",
   "javascript.suggest.autoImports": true,
 
-  // TYPESCRIPT PARA TODOS TS : [ TS_ISOLADOS, DENO, ]
+  // TYPESCRIPT config linguage PARA TODOS TS : [ TS_ISOLADOS, DENO, ]
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features", // CONTROLA FORMATACAO DOS TS
     "editor.formatOnSave": true
@@ -114,6 +114,18 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
+  // linter golang
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "workspace",
+  "go.lintFlags": [
+      "-E", "dogsled",
+      "-E", "gochecknoglobals"
+  ],
+  "go.useLanguageServer": true,
+  "gopls": {
+    "ui.semanticTokens": true // autocomplete Go by gopls
+  },
+  "go.toolsManagement.autoUpdate": true,
 
   // * PLATAFORMAS_RUNTIMES *
   // -- DENO : DEFINICOES ::  obs usa as configs do escopo typescript --
@@ -128,11 +140,6 @@
   "security.workspace.trust.untrustedFiles": "newWindow",
   "git.ignoreRebaseWarning": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "go.useLanguageServer": true,
-  "gopls": {
-    "ui.semanticTokens": true // autocomplete Go by gopls
-  },
-  "go.toolsManagement.autoUpdate": true,
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -152,6 +159,7 @@
   "git.openRepositoryInParentFolders": "always",
   "java.debug.settings.console": "internalConsole",
   "java.debug.settings.forceBuildBeforeLaunch": false,
-  "prisma.showPrismaDataPlatformNotification": false
+  "prisma.showPrismaDataPlatformNotification": false,
+  "editor.minimap.enabled": false
 
 }

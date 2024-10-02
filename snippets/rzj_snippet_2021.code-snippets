@@ -1,5 +1,19 @@
 {
   // global
+  "mkt_MusicaNova": {
+    "prefix": "mkt_MusicaNova",
+    "body": [
+      "---",
+      "Registrando Autoria em Anexo : ",
+      "Musica : $1",
+      "Compositor: @ReinaldoReizao",
+      "Liberações : https://sites.google.com/view/reizaomusic",
+      "redes : @ReinaldoReizao",
+      "Data:  -  -  ",
+      "---"
+    ],
+    "description": "mkt_MusicaNova"
+  },
   "jsDoc": {
     "prefix": "jsDoc",
     "body": [
@@ -84,30 +98,6 @@
       ""
     ],
     "description": "music_contato"
-  },
-  "sinopse_music": {
-    "prefix": "sinopse_music",
-    "body": [
-      "-------------------------------------",
-      "",
-      "Sinopse_Musical :",
-      "@Categorias : [ Dolente ]",
-      "",
-      "* Harmonia :",
-      "tom:",
-      "Bpm :",
-      "parte: \"INTRO\", notas: [  ], compassos( ),  repete(), detalhe: \"\",",
-      "parte: \"A\", notas: [  ], compassos( ),  repete(), detalhe: \"\",",
-      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "parte: \"B\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "parte: \"REFRAO\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "parte: \"transicao\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "parte: \"C\", notas: [  ], compassos( ),   repete(), detalhe: \"\",",
-      "",
-      "------------------------------------",
-    ],
-    "description": "sinopse_music"
   },
 
   "path_add_binario_new_package": {
