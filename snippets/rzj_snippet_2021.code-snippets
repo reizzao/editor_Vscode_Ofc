@@ -1,5 +1,29 @@
 {
   // global
+  "mddv": {
+    "prefix": "mddv",
+    "body": [
+      "",
+      "---",
+      "",
+      "$1",
+    ],
+    "description": "md divide"
+  },
+  "mdt": {
+    "prefix": "mdt",
+    "body": [
+      "# $1",
+    ],
+    "description": "md titulo"
+  },
+  "mdst": {
+    "prefix": "mdst",
+    "body": [
+      "## $1",
+    ],
+    "description": "md subtitulo"
+  },
   "mkt_MusicaNova": {
     "prefix": "mkt_MusicaNova",
     "body": [

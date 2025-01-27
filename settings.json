@@ -154,12 +154,14 @@
   "[jsonc]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "workbench.colorTheme": "OM Theme (Default Dracula Italic)",
+  "workbench.colorTheme": "Omni Owl",
   "boot-java.rewrite.reconcile": true,
   "git.openRepositoryInParentFolders": "always",
   "java.debug.settings.console": "internalConsole",
   "java.debug.settings.forceBuildBeforeLaunch": false,
   "prisma.showPrismaDataPlatformNotification": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "database-client.autoSync": true,
+  "explorer.confirmDragAndDrop": false
 
 }
