@@ -1,4 +1,236 @@
 {
+  "auto export classe controller": {
+    "scope": "javascript,typescript",
+    "prefix": "auto export classe controller",
+    "body": [
+      "export default new ${1}()"
+    ],
+    "description": "auto export classe controller"
+  },
+
+  "divid": {
+    "scope": "javascript,typescript",
+    "prefix": "divid",
+    "body": [
+      "",
+      "/* ---------------------- // ---------------------- */",
+      "/* $0 */",
+      "//"
+    ],
+    "description": "divid"
+  },
+
+  "tipagem js": {
+    "scope": "javascript,typescript",
+    "prefix": "type",
+    "body": [
+      "/**",
+      " * descricao :: $0",
+      " * @param {$1} $2 ",
+      " * @param {string} nomeParam // exemplo",
+      " */",
+      "",
+      ""
+    ],
+    "description": "tipagem js"
+  },
+
+  "metodo__interface--ts": {
+    "scope": "javascript,typescript",
+    "prefix": "metodo__interface--ts",
+    "body": [
+      "async ${1:metodo}: () => Promise<${2: tipo}[]>"
+    ],
+    "description": "method__interface--ts"
+  },
+
+  "metodo__classe--ts": {
+    "scope": "javascript,typescript",
+    "prefix": "metodo__classe--ts",
+    "body": [
+      "async ${1:metodo}(): Promise<${2: tipo}[]> {}"
+    ],
+    "description": "method__interface--ts"
+  },
+
+  //
+  "vitest": {
+    "scope": "javascript,typescript",
+    "prefix": "tester test vitest describe",
+    "body": [
+      "import { vi, describe, it, expect } from 'vitest'",
+      "",
+      "",
+      "describe ('$1 >> Sucess', () => {",
+      "  it (`deve $2 `, async () => {",
+      "",
+      "    await ",
+      "    expect(true)",
+      "  })",
+      "",
+      "})",
+      ""
+    ],
+    "description": "vitest snippet"
+  },
+
+  //
+  "export-modulo-classe__JS": {
+    "scope": "javascript",
+    "prefix": "export-modulo-classe__JS",
+    "body": [
+      "class ${1:modulo} {",
+      "    constructor() {}",
+      "}",
+      "",
+      "module.exports = ${1:modulo}"
+    ],
+    "description": "export-modulo-classe__JS"
+  },
+
+  "comment": {
+    "prefix": "comment",
+    "body": [
+      "/*",
+      "* $0",
+      "*/"
+    ],
+    "description": "comment"
+  },
+
+  "class": {
+    "prefix": "export class - typescript",
+    "scope": "javascript,typescript",
+    "body": [
+      "export class ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}$1 {",
+      "    constructor() {}",
+      "}"
+    ],
+    "description": "class"
+  },
+
+  "interface": {
+    "prefix": "export interface - typescript",
+    "scope": "javascript,typescript",
+    "body": [
+      "export interface ${TM_DIRECTORY/^.+\\\\/(.*)$/$1/}$1 {$2}"
+    ],
+    "description": "interface"
+  },
+
+  "export tudo": {
+    "prefix": "export tudo",
+    "scope": "javascript,typescript",
+    "body": [
+      "export * from '.$1'"
+    ],
+    "description": "export tudo"
+  },
+
+  "eslint nao usar var": {
+    "prefix": "eslint nao usar var",
+    "scope": "javascript,typescript",
+    "body": [
+      "/* eslint-disable no-unused-vars */"
+    ],
+    "description": "eslint nao usar var"
+  },
+
+  "objeto": {
+    "prefix": "objeto",
+    "scope": "javascript,typescript",
+    "body": [
+      "const ${1:objeto} = {",
+      "    contexto: '',",
+      "    entrada: ``,",
+      "    processamento: ``,",
+      "    saida: ``,",
+      "    detalhes: ``",
+      "}"
+    ],
+    "description": "objeto"
+  },
+
+  "requisito": {
+    "prefix": "requisito",
+    "body": [
+      "## API : $1",
+      "",
+      "## REQUISITOS",
+      "- [] Deve ser possivel ",
+      "",
+      "",
+      "## REGRAS DE NEGOCIO",
+      "- [] Não Deve ser possivel "
+    ],
+    "description": "requisito"
+  },
+
+  "no-problem-export": {
+    "prefix": "no-problem-export",
+    "scope": "javascript,typescript",
+    "body": [
+      "/* ---------------------- // ---------------------- */",
+      "//",
+      "//",
+      "export default 1",
+      "//",
+      "//",
+      "/* ---------------------- // ---------------------- */"
+    ],
+    "description": "no-problem-export"
+  },
+
+  "var__obj_repete": {
+    "prefix": "var__obj_repete",
+    "scope": "javascript,typescript",
+    "body": [
+      "${1:var}: `$2`,",
+      "$3"
+    ],
+    "description": "var"
+  },
+
+  "obj-estudo": {
+    "prefix": "obj-estudo",
+    "body": [
+      "/* eslint-disable no-unused-vars */",
+      "",
+      "const ${1:obj} = {",
+      "    sub_chaves: {",
+      "        contexto: `",
+      "            ...",
+      "            `,",
+      "",
+      "        cenarios_quePrecisaTer: `",
+      "            ['',]`,",
+      "        entrada: `",
+      "            ...",
+      "            `,",
+      "",
+      "        processa: `",
+      "            ...",
+      "            `,",
+      "",
+      "        saida: `",
+      "            ...",
+      "        `",
+      "",
+      "    }",
+      "}"
+    ],
+    "description": "obj-estudo"
+  },
+
+  "express": {
+    "scope": "javascript,typescript",
+    "prefix": "express import",
+    "body": [
+      "import { Router, Request, Response } from 'express'"
+    ],
+    "description": "express import"
+  },
+
   "createPrototype": {
     "prefix": "createPrototype",
     "body": [
@@ -14,6 +246,7 @@
     ],
     "description": "createPrototype"
   },
+
   "valor_novo_ou_default_coalescencia_nula": {
     "prefix": "valor_novo_ou_default_coalescencia_nula",
     "body": [
@@ -21,6 +254,7 @@
     ],
     "description": "valor_novo_ou_default_coalescencia_nula"
   },
+
   "pipe_fnOBJParams_async_Generic_TS": {
     "prefix": "pipe_fnOBJParams_async_Generic_TS",
     "body": [
@@ -37,11 +271,12 @@
       "export async function pipe$1Rules<T>(target: T, listFN: any[], param?: TypeParamRules) {",
       "  return await listFN.reduce((acc, fn) => {",
       "    return fn(acc, param)",
-      "  }, target)",
+      "  target)",
       "}"
     ],
     "description": "pipe_fnOBJParams_async_Generic_TS"
   },
+
   "assert_throw_Error_Test_DENO": {
     "prefix": "assert_throw_Error_Test_DENO",
     "body": [
@@ -61,13 +296,14 @@
       "    }",
       "",
       "    assertThrows(",
-      "      () => { targetFN(\"a\") }, Error, `Ops... `, )",
+      "      () => { targetFN(\"a\") Error, `Ops... `, )",
       "  },",
       "  ",
       "});"
     ],
     "description": "assert_throw_Error_Test_DENO"
   },
+
   "deno_test_import_Assert": {
     "prefix": "deno_test_import_Assert",
     "body": [
@@ -80,6 +316,7 @@
     ],
     "description": "deno_test_import_Assert"
   },
+
   "test_deno_SUITE": {
     "prefix": "test_deno_SUITE",
     "body": [
@@ -97,6 +334,7 @@
     ],
     "description": "test_deno_SUITE"
   },
+
   "test_deno": {
     "prefix": "test_deno",
     "body": [
@@ -119,6 +357,7 @@
     ],
     "description": "test_deno"
   },
+
   "conceito_Completo": {
     "prefix": "conceito_Completo",
     "body": [
@@ -135,6 +374,7 @@
     "description": "conceito_Completo"
   },
 
+
   "conceito_Simples": {
     "prefix": "conceito_Simples",
     "body": [
@@ -147,6 +387,7 @@
     ],
     "description": "conceito_Simples"
   },
+
 
   "model_class_custom_error_ts": {
     "prefix": "model_class_custom_error_ts",
@@ -161,6 +402,7 @@
     "description": "model_class_custom_error_ts"
   },
 
+
   "noExport_DEFAULT_1": {
     "prefix": "noExport_DEFAULT_1",
     "body": [
@@ -170,6 +412,7 @@
     ],
     "description": "noExport_DEFAULT_1"
   },
+
   "todo_futuro": {
   "prefix": "todo_futuro",
   "body": [
@@ -177,6 +420,7 @@
   ],
   "description": "todo_futuro"
   },
+
   "todo_naoImplementado": {
     "prefix": "todo_naoImplementado",
     "body": [
@@ -184,6 +428,7 @@
     ],
     "description": "todo_naoImplementado"
   },
+
   "todo_RetornandoErro": {
     "prefix": "todo_RetornandoErro",
     "body": [
@@ -191,6 +436,7 @@
     ],
     "description": "todo_RetornandoErro"
   },
+
   "todo_MelhorarNoFuturo": {
     "prefix": "todo_MelhorarNoFuturo",
     "body": [
@@ -198,6 +444,7 @@
     ],
     "description": "todo_MelhorarNoFuturo"
   },
+
 
   "modelo_cleanRepoTS": {
     "prefix": "modelo_cleanRepoTS",
@@ -209,6 +456,7 @@
     ],
     "description": "modelo_cleanRepoTS"
   },
+
   "decorador_de_Classe": {
     "prefix": "decorador_de_Classe",
     "body": [
@@ -239,6 +487,7 @@
     ],
     "description": "decorador_de_Classe"
   },
+
 
 
 }
