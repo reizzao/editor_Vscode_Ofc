@@ -1,8 +1,8 @@
 {
   // GLOBAL
-  
-  "mddv": {
-    "prefix": "mddv",
+
+  "div_markdown": {
+    "prefix": "div_markdown",
     "body": [
       "",
       "---",

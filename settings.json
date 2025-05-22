@@ -106,8 +106,6 @@
     "editor.defaultFormatter": "vscode.typescript-language-features", // CONTROLA FORMATACAO DOS TS
     "editor.formatOnSave": true
   },
-  "typescript.tsdk": "/home/rzj/.nvm/versions/node/v19.1.0/lib/node_modules/typescript/lib",
-  // MOSTRAR AO VSC O TS GLOBAL PARA O DENO
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.suggest.autoImports": true,
 
