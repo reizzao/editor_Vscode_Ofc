@@ -277,6 +277,47 @@
     "description": "pipe_fnOBJParams_async_Generic_TS"
   },
 
+  "test deno": {
+  "prefix": "td",
+  "body": [
+    "// deno-lint-ignore-file no-explicit-any no-unused-vars",
+    "import { expect } from \"@deps\";",
+    "",
+    "// const repoInuse: IExample1Repository = example1RepositoriesOptions.memory",
+    "// const sut: CreateExample1UseCase = createExample1UseCaseFactory(repoInuse);",
+    "// const seed: ISeddCreateExample1 = seedCreateExample101",
+    "",
+    "// function cleanRepo() {",
+    "//   repoInuse.collection = []",
+    "// }",
+    "",
+    "",
+    "Deno.test({",
+    "  name: \"[ Example1 ] deve retornar a Entidade igual o salvo em repo memory.\",",
+    "  only: false,",
+    "  async fn() {",
+    "",
+    "    cleanRepo()",
+    "",
+    "  //   const expected: ISeddCreateExample1 = await seed",
+    "",
+    "  //   const tested: Example1 = await sut.execute(fakeCreateExample1DTO)",
+    "  //   console.log(tested)",
+    "",
+    "  //   expect(await tested).toEqual(expected);",
+    "  //   expect(await tested).toHaveProperty(\"ID\");",
+    "  //   expect(await tested.Props).toHaveProperty(\"Nome\");",
+    "  //   expect(await tested.Props).toHaveProperty(\"Email\");",
+    "  //   expect(await tested.Props.Email).toBe(expected.Props.Email);",
+    "  },",
+    "});",
+    "",
+    "export default 1",
+    ""
+  ],
+  "description": "test deno"
+},
+
   "assert_throw_Error_Test_DENO": {
     "prefix": "assert_throw_Error_Test_DENO",
     "body": [
@@ -333,29 +374,6 @@
       "});"
     ],
     "description": "test_deno_SUITE"
-  },
-
-  "test_deno": {
-    "prefix": "test_deno",
-    "body": [
-      "import { expect } from \"https://deno.land/x/expect@v0.2.10/expect.ts\";",
-      "",
-      "const sut = true",
-      "",
-      "Deno.test({",
-      "  name: \"[ FAIL ] deve retornar $1.\",",
-      "  only: false,",
-      "  async fn() {",
-      "",
-      "    Log(\"RESULTADO >> \", action)",
-      "  expect(true).toEqual(true);",
-      "  },",
-      "",
-      "});",
-      "",
-      "export default 1;"
-    ],
-    "description": "test_deno"
   },
 
   "conceito_Completo": {
