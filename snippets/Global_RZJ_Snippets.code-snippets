@@ -1,5 +1,37 @@
 {
   // GLOBAL
+  
+  "git feat": {
+    "prefix": "gf",
+    "body": [
+      "feat: [$1] add "
+    ],
+    "description": "git feat"
+  },
+
+  "git doc": {
+    "prefix": "gd",
+    "body": [
+      "doc: [$1] add "
+    ],
+    "description": "git doc"
+  },
+
+  "git refactor": {
+    "prefix": "gr",
+    "body": [
+      "refactor: [$1] add "
+    ],
+    "description": "git refactor"
+  },
+
+  "git todo": {
+    "prefix": "gt",
+    "body": [
+      "todo: [$1] add "
+    ],
+    "description": "git todo"
+  },
 
   "div_markdown": {
     "prefix": "div_markdown",
@@ -11,6 +43,7 @@
     ],
     "description": "md divide"
   },
+
   "mdt": {
     "prefix": "mdt",
     "body": [
@@ -18,6 +51,7 @@
     ],
     "description": "md titulo"
   },
+
   "mdst": {
     "prefix": "mdst",
     "body": [
@@ -25,6 +59,7 @@
     ],
     "description": "md subtitulo"
   },
+
   "mkt_MusicaNova": {
     "prefix": "mkt_MusicaNova",
     "body": [
@@ -39,6 +74,7 @@
     ],
     "description": "mkt_MusicaNova"
   },
+
   "jsDoc": {
     "prefix": "jsDoc",
     "body": [
@@ -53,6 +89,7 @@
     ],
     "description": "jsDoc"
   },
+
   "testar_prototype": {
     "prefix": "testar_prototype",
     "body": [
@@ -61,6 +98,7 @@
     ],
     "description": "testar_prototype"
   },
+
   "tryCatch": {
     "prefix": "tryCatch",
     "body": [
@@ -72,6 +110,7 @@
     ],
     "description": "tryCatch"
   },
+
   "mark_nota": {
     "prefix": "mark_nota",
     "body": [
@@ -81,6 +120,7 @@
     ],
     "description": "mark_nota"
   },
+
   "nova_music": {
     "prefix": "nova_music",
     "body": [
@@ -111,6 +151,7 @@
     "description": "nova_music"
   },
 
+
   "music_contato": {
     "prefix": "music_contato",
     "body": [
@@ -125,6 +166,7 @@
     "description": "music_contato"
   },
 
+
   "path_add_binario_new_package": {
     "prefix": "path_add_binario_new_package",
     "body": [
@@ -133,6 +175,7 @@
     ],
     "description": "path_add_binario_new_package"
   },
+
 
   "tabela_markdown": {
     "prefix": "tabela_markdown",
@@ -143,6 +186,7 @@
     ],
     "description": "tabela_markdown"
   },
+
   "divid": {
     "prefix": "divid_lua",
     "body": [
@@ -152,6 +196,7 @@
     ],
     "description": "divid"
   },
+
   "html5_template": {
     "prefix": "html5_template",
     "body": [
@@ -169,6 +214,7 @@
     ],
     "description": "html5_template"
   },
+
   "rest_http_GET": {
     "prefix": "rest_http_GET",
     "body": [
@@ -179,6 +225,7 @@
     ],
     "description": "rest_http_GET"
   },
+
 
   "rest_http_POST": {
     "prefix": "rest_http_POST",
@@ -197,6 +244,7 @@
     "description": "rest_http_POST"
   },
 
+
   "config_rest_http_settings_VSCODE": {
     "prefix": "config_rest_extensao_vscode",
     "body": [
@@ -212,6 +260,7 @@
     "description": "config_rest_http_settings_VSCODE"
   },
 
+
   "divid": {
     "prefix": "divid",
     "body": [
@@ -221,6 +270,7 @@
     ],
     "description": "divid"
   },
+
   "divid_ESTRELAS": {
     "prefix": "divid_ESTRELAS",
     "body": [
@@ -230,5 +280,6 @@
     ],
     "description": "divid_ESTRELAS"
   },
+
 
 }
