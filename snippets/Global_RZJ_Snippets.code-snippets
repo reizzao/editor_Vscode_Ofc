@@ -1,6 +1,6 @@
 {
   // GLOBAL
-  
+
   "git feat": {
     "prefix": "gf",
     "body": [
@@ -12,7 +12,7 @@
   "git doc": {
     "prefix": "gd",
     "body": [
-      "doc: [$1] add "
+      "doc: [$1] documentado "
     ],
     "description": "git doc"
   },
@@ -20,7 +20,7 @@
   "git refactor": {
     "prefix": "gr",
     "body": [
-      "refactor: [$1] add "
+      "refactor: [$1] modify "
     ],
     "description": "git refactor"
   },
@@ -28,7 +28,7 @@
   "git todo": {
     "prefix": "gt",
     "body": [
-      "todo: [$1] add "
+      "todo: [$1] resolve "
     ],
     "description": "git todo"
   },
