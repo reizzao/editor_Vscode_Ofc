@@ -12,7 +12,7 @@
   "git doc": {
     "prefix": "gd",
     "body": [
-      "doc: [$1] documentado "
+      "doc: [$1] noted "
     ],
     "description": "git doc"
   },
@@ -20,7 +20,7 @@
   "git refactor": {
     "prefix": "gr",
     "body": [
-      "refactor: [$1] modify "
+      "refactor: [$1] modified "
     ],
     "description": "git refactor"
   },
