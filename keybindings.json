@@ -1,5 +1,10 @@
 [
   {
+    "key": "ctrl+d",
+    "command": "workbench.action.closeWindow",
+    "desc": "fechar editor ativo"
+  },
+  {
     "key": "ctrl+shift+f5",
     "command": "workbench.action.reloadWindow",
     "when": "editorTextFocus",
